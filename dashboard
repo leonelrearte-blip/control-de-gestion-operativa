@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Control de Gestión Operativo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f6f8;
+            color: #1f2933;
+        }
+
+        header {
+            background-color: #0b2334;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        section h2 {
+            margin-bottom: 25px;
+            border-left: 5px solid #0b2334;
+            padding-left: 15px;
+            font-size: 24px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            padding: 28px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 19px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #4b5563;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 10px 16px;
+            background-color: #0b2334;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #e5e7eb;
+            font-size: 13px;
+            color: #4b5563;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Control de gestión operativo</h1>
+    <p>Acceso centralizado a tableros Power BI</p>
+</header>
+
+<main>
+
+    <section>
+        <h2>Tableros disponibles</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Ventas</h3>
+                <p>Seguimiento diario y mensual de ventas por canal.</p>
+                <a href="https://app.powerbi.com/" target="_blank">
+                    Abrir tablero
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Logística</h3>
+                <p>Control de entregas, tiempos y nivel de servicio.</p>
+                <a href="https://app.powerbi.com/" target="_blank">
+                    Abrir tablero
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>E-Commerce</h3>
+                <p>Métricas operativas y performance de tiendas online.</p>
+                <a href="https://app.powerbi.com/" target="_blank">
+                    Abrir tablero
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    Control de Gestión Operativo · Power BI
+</footer>
+
+</body>
+</html>
